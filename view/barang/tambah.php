@@ -7,7 +7,7 @@
     <title>Tambah Barang Baru</title>
 </head>
 <body>
-    <h1>Tambah Barang Baru</h1>
+    <h1><i class="fa-solid fa-square-plus"></i> Tambah Barang Baru</h1>
     <form action="simpan.php" method="POST">
     <div class="mb-3">
     <label for="exampleInputEmail1" class="form-label">ID Barang</label>

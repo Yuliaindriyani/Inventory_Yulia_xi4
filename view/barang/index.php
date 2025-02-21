@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <title>Inventory</title>
 </head>
 <body>
@@ -46,7 +47,7 @@
 <div class="container"></div>
     <h1>Data Barang</h1>
     <table border="1" class="table table-bordered table-striped">
-    <a href="tambah.php" class="btn btn-primary">Tambah Barang Baru</a>
+    <a href="tambah.php" class="btn btn-primary"><i class="fa-solid fa-square-plus"></i> Tambah Barang Baru</a>
         <tr>
             <th>No.</th>
             <th>ID Barang</th>
@@ -71,8 +72,8 @@
                         <td><?php echo $result['harga']?></td>
                         <td><?php echo $result['stok']?></td>
                         <td>
-                            <a href="" class="btn btn-warning">Edit</a>
-                            <a href="" class="btn btn-danger">Hapus</a>
+                            <a href="edit.php?nama=<?php echo $result['nama']?>" class="btn btn-warning"><i class="fa-solid fa-pen-to-square"></i> Edit</a>
+                            <a href="hapus.php?id_barang=<?php echo $result['id_barang']?>" onclick="return confirm('Kamu yakin mau hapus barang ?')" class="btn btn-danger"><i class="fa-solid fa-trash"></i> Hapus</a>
                         </td>
                     </tr>
                     <?php

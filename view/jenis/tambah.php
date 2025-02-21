@@ -7,7 +7,7 @@
     <title>Tambah Jenis Baru</title>
 </head>
 <body>
-    <h1>Tambah Jenis Baru</h1>
+    <h1><i class="fa-solid fa-square-plus"></i> Tambah Jenis Baru</h1>
     <form action="simpan.php" method="POST">
   <div class="mb-3">
     <label for="exampleInputEmail1" class="form-label">ID Jenis</label>
@@ -19,6 +19,7 @@
     <input type="text" class="form-control" name="nama_jenis" id="exampleInputEmail1" aria-describedby="emailHelp">
     <div id="emailHelp" class="form-text"></div>
   </div>
+
   <button type="submit" class="btn btn-primary">Submit</button>
     </form>
 </body>
